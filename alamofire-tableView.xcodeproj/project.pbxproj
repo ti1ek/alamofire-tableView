@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07430FA52A35D976007F49DC /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07430FA42A35D976007F49DC /* CardTableViewCell.swift */; };
+		07430FA72A35DC8E007F49DC /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07430FA62A35DC8E007F49DC /* CardDetailViewController.swift */; };
 		0757DFF62A2354DF002E2DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0757DFF52A2354DF002E2DFD /* AppDelegate.swift */; };
 		0757DFF82A2354DF002E2DFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0757DFF72A2354DF002E2DFD /* SceneDelegate.swift */; };
-		0757DFFA2A2354DF002E2DFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0757DFF92A2354DF002E2DFD /* ViewController.swift */; };
+		0757DFFA2A2354DF002E2DFD /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0757DFF92A2354DF002E2DFD /* CardsViewController.swift */; };
 		0757DFFF2A2354DF002E2DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0757DFFE2A2354DF002E2DFD /* Assets.xcassets */; };
 		0757E0022A2354DF002E2DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0757E0002A2354DF002E2DFD /* LaunchScreen.storyboard */; };
+		0757E00D2A2356B7002E2DFD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0757E00C2A2356B7002E2DFD /* Model.swift */; };
+		0757E0102A2356EC002E2DFD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0757E00F2A2356EC002E2DFD /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0757DFF22A2354DF002E2DFD /* alamofire-tableView-mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alamofire-tableView-mvvm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07430FA42A35D976007F49DC /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		07430FA62A35DC8E007F49DC /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		0757DFF22A2354DF002E2DFD /* alamofire-tableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alamofire-tableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0757DFF52A2354DF002E2DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0757DFF72A2354DF002E2DFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0757DFF92A2354DF002E2DFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0757DFF92A2354DF002E2DFD /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		0757DFFE2A2354DF002E2DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0757E0012A2354DF002E2DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0757E0032A2354DF002E2DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0757E00C2A2356B7002E2DFD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,16 +36,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0757E0102A2356EC002E2DFD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07430FA82A3619E8007F49DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0757E00C2A2356B7002E2DFD /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07430FA92A3619F2007F49DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07430FA42A35D976007F49DC /* CardTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07430FAA2A3619FB007F49DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0757DFF92A2354DF002E2DFD /* CardsViewController.swift */,
+				07430FA62A35DC8E007F49DC /* CardDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		0757DFE92A2354DF002E2DFD = {
 			isa = PBXGroup;
 			children = (
-				0757DFF42A2354DF002E2DFD /* alamofire-tableView-mvvm */,
+				0757DFF42A2354DF002E2DFD /* alamofire-tableView */,
 				0757DFF32A2354DF002E2DFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,19 +79,20 @@
 		0757DFF32A2354DF002E2DFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0757DFF22A2354DF002E2DFD /* alamofire-tableView-mvvm.app */,
+				0757DFF22A2354DF002E2DFD /* alamofire-tableView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0757DFF42A2354DF002E2DFD /* alamofire-tableView-mvvm */ = {
+		0757DFF42A2354DF002E2DFD /* alamofire-tableView */ = {
 			isa = PBXGroup;
 			children = (
 				0757E0092A235550002E2DFD /* App */,
 				0757E00A2A23555C002E2DFD /* Resources */,
 				0757E00B2A23558B002E2DFD /* Sources */,
 			);
-			path = "alamofire-tableView-mvvm";
+			name = "alamofire-tableView";
+			path = "alamofire-tableView";
 			sourceTree = "<group>";
 		};
 		0757E0092A235550002E2DFD /* App */ = {
@@ -83,7 +117,9 @@
 		0757E00B2A23558B002E2DFD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0757DFF92A2354DF002E2DFD /* ViewController.swift */,
+				07430FAA2A3619FB007F49DC /* Controllers */,
+				07430FA92A3619F2007F49DC /* Views */,
+				07430FA82A3619E8007F49DC /* Models */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -91,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0757DFF12A2354DF002E2DFD /* alamofire-tableView-mvvm */ = {
+		0757DFF12A2354DF002E2DFD /* alamofire-tableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0757E0062A2354DF002E2DFD /* Build configuration list for PBXNativeTarget "alamofire-tableView-mvvm" */;
+			buildConfigurationList = 0757E0062A2354DF002E2DFD /* Build configuration list for PBXNativeTarget "alamofire-tableView" */;
 			buildPhases = (
 				0757DFEE2A2354DF002E2DFD /* Sources */,
 				0757DFEF2A2354DF002E2DFD /* Frameworks */,
@@ -103,9 +139,12 @@
 			);
 			dependencies = (
 			);
-			name = "alamofire-tableView-mvvm";
-			productName = "alamofire-tableView-mvvm";
-			productReference = 0757DFF22A2354DF002E2DFD /* alamofire-tableView-mvvm.app */;
+			name = "alamofire-tableView";
+			packageProductDependencies = (
+				0757E00F2A2356EC002E2DFD /* Alamofire */,
+			);
+			productName = "alamofire-tableView";
+			productReference = 0757DFF22A2354DF002E2DFD /* alamofire-tableView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0757DFED2A2354DF002E2DFD /* Build configuration list for PBXProject "alamofire-tableView-mvvm" */;
+			buildConfigurationList = 0757DFED2A2354DF002E2DFD /* Build configuration list for PBXProject "alamofire-tableView" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,11 +171,14 @@
 				Base,
 			);
 			mainGroup = 0757DFE92A2354DF002E2DFD;
+			packageReferences = (
+				0757E00E2A2356EC002E2DFD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0757DFF32A2354DF002E2DFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0757DFF12A2354DF002E2DFD /* alamofire-tableView-mvvm */,
+				0757DFF12A2354DF002E2DFD /* alamofire-tableView */,
 			);
 		};
 /* End PBXProject section */
@@ -158,9 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0757DFFA2A2354DF002E2DFD /* ViewController.swift in Sources */,
+				07430FA52A35D976007F49DC /* CardTableViewCell.swift in Sources */,
+				07430FA72A35DC8E007F49DC /* CardDetailViewController.swift in Sources */,
+				0757DFFA2A2354DF002E2DFD /* CardsViewController.swift in Sources */,
 				0757DFF62A2354DF002E2DFD /* AppDelegate.swift in Sources */,
 				0757DFF82A2354DF002E2DFD /* SceneDelegate.swift in Sources */,
+				0757E00D2A2356B7002E2DFD /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +346,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LPX2GGHMJT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "alamofire-tableView-mvvm/Resources/Info.plist";
+				INFOPLIST_FILE = "alamofire-tableView/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -311,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ti1ek.koszhanov.alamofire-tableView-mvvm";
+				PRODUCT_BUNDLE_IDENTIFIER = "ti1ek.koszhanov.alamofire-tableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -331,7 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LPX2GGHMJT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "alamofire-tableView-mvvm/Resources/Info.plist";
+				INFOPLIST_FILE = "alamofire-tableView/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -341,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ti1ek.koszhanov.alamofire-tableView-mvvm";
+				PRODUCT_BUNDLE_IDENTIFIER = "ti1ek.koszhanov.alamofire-tableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -355,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0757DFED2A2354DF002E2DFD /* Build configuration list for PBXProject "alamofire-tableView-mvvm" */ = {
+		0757DFED2A2354DF002E2DFD /* Build configuration list for PBXProject "alamofire-tableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0757E0042A2354DF002E2DFD /* Debug */,
@@ -364,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0757E0062A2354DF002E2DFD /* Build configuration list for PBXNativeTarget "alamofire-tableView-mvvm" */ = {
+		0757E0062A2354DF002E2DFD /* Build configuration list for PBXNativeTarget "alamofire-tableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0757E0072A2354DF002E2DFD /* Debug */,
@@ -374,6 +419,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0757E00E2A2356EC002E2DFD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0757E00F2A2356EC002E2DFD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0757E00E2A2356EC002E2DFD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0757DFEA2A2354DF002E2DFD /* Project object */;
 }
